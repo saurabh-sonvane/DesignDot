@@ -73,7 +73,7 @@ export default function Insights() {
         <div className="flex flex-col lg:flex-row gap-10">
 
           <div className=" lg:w-auto lg:flex-shrink-0 content-center justify-center">
-            <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl p-8 shadow-lg inline-block">
+            <div className="bg-gradient-to-br flex flex-wrap items-end h-[200px] w-[200px] pb-[20px] pl-[20px] from-gray-200 to-gray-300 rounded-2xl p-8 shadow-lg ">
               <h2 className="text-2xl font-bold text-gray-800 whitespace-nowrap">
                 INSPIRATION
                 <br />
@@ -82,7 +82,7 @@ export default function Insights() {
             </div>
           </div>
 
-          <div className="w-full lg:w-[36%] flex flex-col">
+          <div className="w-full flex-1 flex flex-col">
             <div>
               {slides.map((slide) => {
                 const isActive = active === slide.id;

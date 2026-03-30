@@ -18,54 +18,55 @@ export default function Navbar() {
               <Image src={logo} alt="logo" className=" h-10 w-10" />
             </div>
           </div>
+          <div className="flex items-center justify-end sm:gap-4 md:gap-10">
+            <div className="hidden lg:flex items-center space-x-6 xl:space-x-6 ">
+              <a
+                href="#"
+                className="text-base font-bold text-gray-900 hover:text-gray-600"
+              >
+                WHO WE SERVE
+              </a>
+              <a
+                href="#"
+                className="text-base font-bold text-gray-900 hover:text-gray-600"
+              >
+                SOLUTIONS
+              </a>
+              <a
+                href="#"
+                className="text-base font-bold text-gray-900 hover:text-gray-600"
+              >
+                RESOURCES
+              </a>
+              <a
+                href="#"
+                className="text-base font-bold text-gray-900 hover:text-gray-600"
+              >
+                ABOUT US
+              </a>
+              <a
+                href="#"
+                className="text-base font-bold text-gray-900 hover:text-gray-600"
+              >
+                CONTACT US
+              </a>
+            </div>
 
-          <div className="hidden lg:flex items-center space-x-8 xl:space-x-12">
-            <a
-              href="#"
-              className="text-sm font-bold text-gray-900 hover:text-gray-600"
-            >
-              WHO WE SERVE
-            </a>
-            <a
-              href="#"
-              className="text-sm font-bold text-gray-900 hover:text-gray-600"
-            >
-              SOLUTIONS
-            </a>
-            <a
-              href="#"
-              className="text-sm font-bold text-gray-900 hover:text-gray-600"
-            >
-              RESOURCES
-            </a>
-            <a
-              href="#"
-              className="text-sm font-bold text-gray-900 hover:text-gray-600"
-            >
-              ABOUT US
-            </a>
-            <a
-              href="#"
-              className="text-sm font-bold text-gray-900 hover:text-gray-600"
-            >
-              CONTACT US
-            </a>
-          </div>
+            <div className="flex items-center space-x-4 lg:space-x-6">
+              <button className="p-2 hover:bg-gray-100 rounded-full mr-4 ">
+                <IoSearch className="w-6 h-6  text-gray-900" />
+              </button>
 
-          <div className="flex items-center space-x-4 lg:space-x-6">
-            <button className="p-2 hover:bg-gray-100 rounded-full ">
-              <IoSearch className="w-5 h-5  text-gray-900" />
-            </button>
+              <button className="hidden sm:flex items-center space-x-1 text-base font-bold text-gray-900 mr-4">
+                <span>IND</span>
+                <IoMdArrowDropdown className="w-4 h-4" />
+              </button>
 
-            <button className="hidden sm:flex items-center space-x-1 text-sm font-bold text-gray-900">
-              <span>IND</span>
-              <IoMdArrowDropdown className="w-4 h-4" />
-            </button>
-
-            <button className="hidden sm:flex items-center space-x-1 text-sm font-bold text-gray-900">
-              <span>ENGLISH</span>
-              <IoMdArrowDropdown className="w-4 h-4" />
-            </button>
+              <button className="hidden sm:flex items-center space-x-1 text-base font-bold text-gray-900">
+                <span>ENGLISH</span>
+                <IoMdArrowDropdown className="w-4 h-4" />
+              </button>
+            </div>
 
             {/* Mobile Menu */}
 

@@ -11,7 +11,7 @@ export default function AboutFirm() {
       <div className="max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 py-6 sm:py-8 lg:py-12">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-8 xl:gap-12 items-start lg:items-center bg-[url('/map.jpg')] bg-no-repeat bg-cover bg-center lg:bg-left lg:bg-[length:60%_100%]">
           <div className=" lg:w-auto lg:flex-shrink-0">
-            <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl p-8 shadow-lg inline-block">
+            <div className="bg-gradient-to-br flex flex-wrap items-end content-end h-[200px] w-[200px] pb-[20px] pl-[20px] from-gray-200 to-gray-300 rounded-2xl shadow-lg inline-block">
               <h2 className="text-2xl font-bold text-gray-800 whitespace-nowrap">
                 ABOUT
                 <br />
@@ -98,15 +98,14 @@ export default function AboutFirm() {
               <div className="w-full lg:w-auto lg:shrink-0 mt-6 lg:mt-0 ">
                 <div className="flex justify-end lg:justify-end mb-6">
                   <button
-                    className=" cursor-pointer bg-linear-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-between sm:justify-center text-sm sm:text-base "
+                    className=" cursor-pointer bg-linear-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-black px-2 sm:pl-4 py-2 rounded-[20px] font-semibold shadow-lg transition-all duration-300 flex items-center gap-12 w-full sm:w-auto justify-between sm:justify-center "
                   >
-                    <div className="flex items-center gap-2">
+                    <div className=" text-xs flex items-center gap-2 font-bold">
                       <span>WE ARE LOCATED</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <span className="font-bold">INDIA</span>
-                      <IoMdArrowDropdown
-                      />
+                      <span className="text-[15px] font-bold">INDIA</span>
+                      <IoMdArrowDropdown />
                     </div>
                   </button>
                 </div>
