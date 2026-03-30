@@ -28,7 +28,7 @@ export default function HotTopics() {
       <div className="flex items-stretch min-h-[110px] flex-col lg:flex-row">
  
         <div className="flex items-center mr-[16px] ml-[16px] lg:ml-0 ">
-          <div className="bg-orange-500 px-6 py-2 h-[36px] flex items-center btn-path">
+          <div className="bg-orange-500 px-6 py-2 h-[36px] flex items-center btn-path rounded-md">
             <span className="text-[12px] font-bold text-black tracking-[0.12em] uppercase whitespace-nowrap">
               HOT TOPICS
             </span>

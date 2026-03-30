@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import hero from "../../public/hero_img.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import user1 from "../../public/user1.png";
 import user2 from "../../public/user2.png";
 import user3 from "../../public/user3.png";
+import CountUp from "react-countup";
 
 export default function Hero() {
   return (
@@ -24,10 +27,12 @@ export default function Hero() {
             building trust for shared success.
           </p>
 
-          <button className="mt-6 bg-orange-500 text-sm text-black pl-4 pr-8 px-6 py-3 rounded-md flex items-center justify-center font-bold gap-2 btn-path">
-            <FaArrowRightLong />
-            LET’S CONNECT
-          </button>
+          <div className="mt-6 inline-block rounded-md overflow-hidden">
+            <button className="bg-orange-500 text-sm text-black pl-4 pr-8 px-6 py-3 flex items-center justify-center font-bold gap-2 btn-path">
+              <FaArrowRightLong />
+              LET’S CONNECT
+            </button>
+          </div>
 
           <p className="mt-10 text-xs text-white">
             ACCOUNTING, TAXATION, & BUSINESS ADVISORY BETWEEN INDIA, JAPAN, AND
@@ -68,8 +73,10 @@ export default function Hero() {
         </div>
 
         <div className="text-black lg:text-white font-bold ">
-          <p className="text-[32px] font-bold">250 +</p>
-          <p className=" text-[10px] opacity-80 max-w-[80px]">Enjoy Working with us</p>
+          <p className="text-[32px] font-bold"> <CountUp end={250} duration={3} />+ </p>
+          <p className=" text-[10px] opacity-80 max-w-[80px]">
+            Enjoy Working with us
+          </p>
         </div>
       </div>
 

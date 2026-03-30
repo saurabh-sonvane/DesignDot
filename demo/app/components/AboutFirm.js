@@ -3,6 +3,7 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 import Image from "next/image";
 import office from "../../public/office.png";
+import CountUp from "react-countup";
 
 export default function AboutFirm() {
 
@@ -47,7 +48,7 @@ export default function AboutFirm() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
                   <div className="pt-2">
                     <h3 className="text-4xl  font-bold text-gray-900 mb-2">
-                      250+
+                      <CountUp end={250} duration={3} />+
                     </h3>
                     <p className="text-gray-700 text-sm font-medium leading-tight">
                       Professional Staff
@@ -58,7 +59,7 @@ export default function AboutFirm() {
 
                   <div className="pt-2">
                     <h3 className="text-4xl font-bold text-gray-900 mb-2">
-                      1000+
+                      <CountUp end={1000} duration={3} />+
                     </h3>
                     <p className="text-gray-700 text-sm font-medium leading-tight">
                       Clients in the HLS
@@ -69,7 +70,7 @@ export default function AboutFirm() {
 
                   <div className=" pt-2">
                     <h3 className="text-4xl font-bold text-gray-900 mb-2">
-                      35+
+                      <CountUp end={35} duration={3} />+
                     </h3>
                     <p className="text-gray-700 text-sm font-medium leading-tight">
                       Years of Experience
@@ -82,7 +83,7 @@ export default function AboutFirm() {
 
                   <div className="pt-2">
                     <h3 className="text-4xl font-bold text-gray-900 mb-2">
-                      15+
+                      <CountUp end={15} duration={3} />+
                     </h3>
                     <p className="text-gray-700 text-sm font-medium leading-tight">
                       Countries Covered
